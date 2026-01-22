@@ -1,5 +1,7 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        # Time Complexity: O(n^2) - for each character, expand around center
+        # Space Complexity: O(1) - only storing result string (not counting output)
         #check for even or odd length palindromes 
         # Using the expand around center
         res=''

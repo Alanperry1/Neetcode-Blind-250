@@ -1,5 +1,7 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
+        # Time Complexity: O(n) - single pass through string where n is length
+        # Space Complexity: O(1) - constant size hash map with 7 elements
         total=0
         roman={
             "I":1,

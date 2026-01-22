@@ -9,6 +9,8 @@ from typing import Optional
 
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        # Time Complexity: O(m * n) - for each node in root (m), potentially check all nodes in subRoot (n)
+        # Space Complexity: O(h) - recursion stack depth where h is tree height
         if not root:
             return False
         if self.isSameTree(root, subRoot):

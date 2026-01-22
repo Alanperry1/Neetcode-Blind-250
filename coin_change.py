@@ -1,5 +1,7 @@
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
+        # Time Complexity: O(amount * len(coins)) - nested loops through amount and coins
+        # Space Complexity: O(amount) - dp array of size amount+1
         #set max amt of combinations=amt +1
         dp=[amount+1]*(amount+1)
         dp[0]=0

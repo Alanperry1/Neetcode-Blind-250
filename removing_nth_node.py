@@ -6,6 +6,8 @@
 
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        # Time Complexity: O(L) - single pass where L is length of linked list
+        # Space Complexity: O(1) - only using constant extra space
         dummy=ListNode(0,head)
         left,right=dummy,head
         while n>0 and right:

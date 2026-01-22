@@ -1,5 +1,7 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
+        # Time Complexity: O(n) - two passes through array (excluding first and last)
+        # Space Complexity: O(n) - dp arrays in helper function
         if len(nums)==1:
             return nums[0]
         def rob_II(arr):

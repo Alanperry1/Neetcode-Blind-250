@@ -1,5 +1,7 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # Time Complexity: O(n^2) - sorting O(n log n) + nested loop O(n^2)
+        # Space Complexity: O(1) - not counting output array, only using constant extra space
         nums.sort()
         result=[]
         for i in range(len(nums)-2):

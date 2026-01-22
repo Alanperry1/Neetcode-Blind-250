@@ -6,6 +6,8 @@
 
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # Time Complexity: O(n + m) - traverse both lists where n, m are their lengths
+        # Space Complexity: O(1) - only using pointers, not creating new nodes
         dummy=ListNode()
         tail=dummy
         while list1 and list2 :

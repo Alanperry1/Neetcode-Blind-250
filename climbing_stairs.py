@@ -1,5 +1,7 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
+        # Time Complexity: O(n) - iterate from 0 to n
+        # Space Complexity: O(n) - dp array of size n
         if n<=2:
             return n
         else:

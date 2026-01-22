@@ -1,5 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        # Time Complexity: O(n) - single pass through string where n is length
+        # Space Complexity: O(n) - stack can grow up to n/2 elements in worst case
         stack=[]
         valid={
             ")":"(",

@@ -1,5 +1,7 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
+        # Time Complexity: O(n) - single pass through nums array
+        # Space Complexity: O(n) - dp array of size n
         if len(nums)==1:
             return nums[0]
         else:

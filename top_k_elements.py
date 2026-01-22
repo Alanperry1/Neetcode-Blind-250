@@ -1,5 +1,7 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        # Time Complexity: O(n log n) - counting O(n) + sorting O(n log n)
+        # Space Complexity: O(n) - hash map storing all unique elements
         seen={}
         for num in nums:
             if num in seen:

@@ -6,6 +6,8 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
+        # Time Complexity: O(n) - traverse linked list once
+        # Space Complexity: O(1) - only two pointers used
         slow,fast=head,head
         while fast and fast.next:
             slow=slow.next

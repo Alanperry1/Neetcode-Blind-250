@@ -1,5 +1,7 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
+        # Time Complexity: O(n) - sliding window, each char visited at most twice
+        # Space Complexity: O(1) - hash set with at most 26 characters (constant)
         #hash-set of frequency of elements
         #set two pointer
         result=0

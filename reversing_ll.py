@@ -6,6 +6,8 @@
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        # Time Complexity: O(n) - single pass through linked list
+        # Space Complexity: O(1) - only using constant extra space
         prev,curr=None,head
 
         while curr:

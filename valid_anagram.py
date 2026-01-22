@@ -1,5 +1,7 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        # Time Complexity: O(n) - iterate through both strings where n is length of strings
+        # Space Complexity: O(1) - at most 26 characters in hash maps (constant)
         seen_1={}
         seen_2={}
         if len(s)!= len(t):

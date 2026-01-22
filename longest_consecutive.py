@@ -1,5 +1,7 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        # Time Complexity: O(n log n) - sorting dominates
+        # Space Complexity: O(n) - creating new sorted array
         if len(nums)==0:
             return 0
         new=sorted(set(nums))

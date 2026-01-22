@@ -1,5 +1,7 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        # Time Complexity: O(m * n) - visit each element once where m, n are dimensions
+        # Space Complexity: O(1) - result array doesn't count as extra space
         left,right=0,len(matrix[0])
         top,bottom=0,len(matrix)
         res=[]

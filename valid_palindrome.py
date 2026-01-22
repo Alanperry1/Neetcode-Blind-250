@@ -1,5 +1,7 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
+        # Time Complexity: O(n) - iterate through string twice (filtering + checking)
+        # Space Complexity: O(n) - storing filtered string
         new=''
         for string in s:
             if string.isalnum():

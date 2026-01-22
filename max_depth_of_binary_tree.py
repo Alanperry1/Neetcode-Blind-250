@@ -7,6 +7,8 @@
 from collections import deque
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
+        # Time Complexity: O(n) - visit each node once where n is number of nodes
+        # Space Complexity: O(w) - queue stores at most w nodes where w is max width
         if not root:
             return 0
         q=deque([(root,1)])

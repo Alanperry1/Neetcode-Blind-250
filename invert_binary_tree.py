@@ -7,6 +7,8 @@
 
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        # Time Complexity: O(n) - visit each node once where n is number of nodes
+        # Space Complexity: O(h) - recursion stack depth where h is tree height
         if not root: return None
         tmp=root.left
         root.left=root.right
